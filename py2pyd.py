@@ -58,9 +58,10 @@ def clean_build(path):
 
 
 if __name__ == '__main__':
-
-    # 需要在cmd中执行该脚本
-    # python main.py build_ext --inplace
+    # 1 复制文件到新目录中
+    # 2 删除多余文件
+    # 3 需要在cmd中执行该脚本
+    # python py2pyd.py build_ext --inplace
 
     # 排除不打包的文件
     exclude_filename = [
@@ -69,4 +70,5 @@ if __name__ == '__main__':
         '__init__.py',
     ]
 
-    py2pyd(os.getcwd())
+    file_path = 'C:\\Users\\30818\\Desktop\\pyd_mobile_flashwork'
+    py2pyd(file_path)
